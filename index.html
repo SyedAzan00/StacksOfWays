@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StacksOfWays | Wayne</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #0b0c10;
+      color: #c5c6c7;
+    }
+
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0,0,0,0.7);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 70px;
+      z-index: 1000;
+    }
+
+    .logo {
+      color: #66fcf1;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: #c5c6c7;
+      margin: 0 15px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #66fcf1;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 120px 80px;
+    }
+
+    #home {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    #home h1 {
+      color: #66fcf1;
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    #home p {
+      max-width: 600px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    #about, #services, #projects, #contact {
+      padding-top: 120px;
+    }
+
+    h2 {
+      color: #66fcf1;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .about-content, .services, .projects {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .services .card, .projects .card {
+      background: #1f2833;
+      padding: 25px;
+      border-radius: 12px;
+      margin: 20px 10px;
+      display: inline-block;
+      width: 250px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .services .card:hover, .projects .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px #66fcf1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #1f2833;
+      color: #c5c6c7;
+      font-size: 0.9rem;
+    }
+
+    .contact-info {
+      text-align: center;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 15px 30px;
+      }
+      section {
+        padding: 100px 30px;
+      }
+      #home h1 {
+        font-size: 2.2rem;
+      }
+      .services .card, .projects .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">StacksOfWays</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1>Welcome to StacksOfWays</h1>
+    <p>Hey, I'm <strong>Wayne</strong> — a passionate web developer building creative, modern, and smart digital experiences using AI and the latest web technologies.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <p>I'm a new web developer exploring the power of AI in development. I love creating clean, responsive, and user-friendly websites that represent businesses and brands perfectly.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>My Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Web Design</h3>
+        <p>Modern and responsive web designs tailored to your business vision.</p>
+      </div>
+      <div class="card">
+        <h3>AI Integration</h3>
+        <p>Smart tools and AI features that make your website more dynamic and efficient.</p>
+      </div>
+      <div class="card">
+        <h3>Branding</h3>
+        <p>Helping brands stand out with creative layouts and strategic design choices.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio to showcase work and skills.</p>
+      </div>
+      <div class="card">
+        <h3>Business Landing Page</h3>
+        <p>Professional landing page for a startup or service.</p>
+      </div>
+      <div class="card">
+        <h3>AI-Powered Tool</h3>
+        <p>A small project demonstrating AI usage in web development.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p>📧 Email: <a href="mailto:stacksofways@gmail.com" style="color:#66fcf1;">stacksofways@gmail.com</a></p>
+      <p>🌐 Instagram: <a href="#" style="color:#66fcf1;">@stacksofways</a></p>
+      <p>💼 GitHub: <a href="#" style="color:#66fcf1;">github.com/stacksofways</a></p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 StacksOfWays | Built by Wayne with ❤️ & AI
+  </footer>
+</body>
+</html>
